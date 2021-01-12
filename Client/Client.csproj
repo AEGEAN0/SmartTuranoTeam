@@ -17,8 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="wwwroot\Image\Cattura.JPG">
+    <Content Update="wwwroot\Cattura.JPG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\Image\Cattura.JPG">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
