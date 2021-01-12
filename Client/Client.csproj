@@ -16,4 +16,10 @@
     <ProjectReference Include="..\Data\Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\Image\Cattura.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
