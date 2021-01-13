@@ -2,8 +2,13 @@
 @inject HttpClient http
 @inject NavigationManager navigation
 
-    <img src="Cattura.jpg" /><div class="content-container">
-   
+<div>
+    @pippo
+
+</div>
+
+   <img src="/Cattura.jpg" /><div class="content-container">
+
     <ListHeader Title="My List"
                 HandleAdd="@AddNewProduct"
                 HandleRefresh="@HandleRefresh"
@@ -20,7 +25,7 @@
     <ModalYesNo Message="@modalMessage"
                 OnNo="@CloseModal"
                 OnYes="@DeleteFromModal"
-                Show="@showModal"/>
+                Show="@showModal" />
 </div>
 
 @code {
@@ -29,9 +34,11 @@
     private Product productToDelete;
     private bool showModal;
     private string modalMessage = "";
+    private string pippo = "";
 
     protected override async Task OnInitializedAsync()
     {
+        pippo = System.IO.Directory.GetCurrentDirectory();
         products = await http.GetFromJsonAsync<IEnumerable<Product>>("api/products");
     }
 
