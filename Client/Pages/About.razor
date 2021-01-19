@@ -1,10 +1,11 @@
 ﻿@page "/about"
+@inject HttpClient http
 
 <div class="content-container">
     <div class="content-title-group not-found">
         <h2 class="title">Scope</h2>
         <p>
-            This project was created to help represent a fundamental app written with Blazor. 
+            This project was created to help represent a fundamental app written with Blazor.
         </p>
         <br />
         <h2 class="title">Resources</h2>
@@ -17,3 +18,29 @@
         </ul>
     </div>
 </div>
+@*<ButtonFooter Class="save-button"
+              IconClasses="fas fa-save"
+              OnClick="@HandleRefresh"
+              Label=@s />*@
+
+@code
+{
+    private string s="pippo";
+
+    private async Task HandleRefresh()
+    {
+
+        try
+        {
+            s = await http.GetFromJsonAsync<string>("api/function1");
+
+        }
+        catch (Exception e)
+        {
+            s = e.Message;
+        }
+
+
+    }
+
+}
