@@ -21,22 +21,29 @@ namespace Api
             new Product
             {
                 Id = 10,
-                Name = "Strawberries",
-                Description = "16oz package of fresh organic strawberries",
+                Name = "Lucio",
+                Description = "/Image/lucio1.jpg",
                 Quantity = 1
             },
             new Product
             {
                 Id = 20,
-                Name = "Sliced bread",
-                Description = "Load of fresh sliced wheat bread",
+                Name = "Mark",
+                Description = "/Image/mark1.JPG",
                 Quantity = 1
             },
             new Product
             {
                 Id = 30,
-                Name = "Apples",
-                Description = "Bag of 7 fresh McIntosh apples",
+                Name = "Pier",
+                Description = "/Image/pier1.JPG",
+                Quantity = 1
+            },
+            new Product
+            {
+                Id = 30,
+                Name = "Robert",
+                Description = "/Image/robert1.jpg",
                 Quantity = 1
             }
         };
