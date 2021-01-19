@@ -29,14 +29,14 @@ namespace Api
             {
                 Id = 20,
                 Name = "Mark",
-                Description = "/Image/mark1.JPG",
+                Description = "/Image/mark1.jpg",
                 Quantity = 1
             },
             new Product
             {
                 Id = 30,
                 Name = "Pier",
-                Description = "/Image/pier1.JPG",
+                Description = "/Image/pier1.jpg",
                 Quantity = 1
             },
             new Product
